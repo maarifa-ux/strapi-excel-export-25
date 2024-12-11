@@ -1,1 +1,1 @@
-# excel-export-25
+# strapi-excel-export-plugin-25

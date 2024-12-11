@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0",
-  "keywords": [],
+  "version": "1.0.1",
+  "keywords": ["strapi","excel","export","2025"],
   "type": "commonjs",
   "exports": {
     "./package.json": "./package.json",
@@ -58,12 +58,21 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "excel-export-25",
-    "displayName": "Excel Export 2025 Plugin",
+    "name": "strapi-excel-export-25",
+    "displayName": "Strapi Excel Export Plugin 2025",
     "description": ""
   },
-  "name": "excel-export-25",
-  "description": "",
+  "name": "strapi-excel-export-25",
+  "description": "Note:This codes forked by a repo.",
   "license": "MIT",
-  "author": "Muammer <info@maarifa.com.tr>"
+  "author": "Muammer <info@maarifa.com.tr>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maarifa-ux/strapi-excel-export-25.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maarifa-ux/strapi-excel-export-25/issues"
+  },
+  "homepage": "https://github.com/maarifa-ux/strapi-excel-export-25#readme"
 }
