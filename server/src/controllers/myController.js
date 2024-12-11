@@ -2,7 +2,7 @@
 const ExcelJS = require("exceljs");
 
 module.exports = ({ strapi }) => ({
-  async getDropDownData() {
+  async getDropDownData(ctx) {
     let excel = strapi.config.get("excel");
     let dropDownValues = [];
     let array = Object.keys(excel?.config);
@@ -36,9 +36,9 @@ module.exports = ({ strapi }) => ({
     dropDownValues.sort((a, b) => a.label.localeCompare(b.label));
     //console.log("dropDownValues", dropDownValues);
 
-    return {
+    return ctx.send({
       data: dropDownValues,
-    };
+    });
   },
   async getTableData(ctx) {
     let excel = strapi.config.get("excel");
